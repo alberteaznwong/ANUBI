@@ -10,7 +10,7 @@ This software is designed to **optimize protein or peptide candidates for improv
 **3. Binding free energy calculation: gmx_MMPBSA;**  
 **4. Sequence Sampling using Monte Carlo methods: We have two different modes PEPTIDE MODE and PROTEIN MODE**  
 
-It automates the process from input preparation to result generation.
+
 ![ANUBI Workflow](image/workflow.png)
 ---
 
@@ -30,6 +30,7 @@ It automates the process from input preparation to result generation.
 2. Make sure you have all dependencies: check conda, python, gromacs, gmx_mmpbsa and modeller;
    ```bash
    conda create -n ANUBI
+   conda activate ANUBI
    conda config --add channels salilab   
    conda install modeller     
    conda install pandas numpy pyyaml biopython 
