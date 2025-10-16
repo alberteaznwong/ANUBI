@@ -1,0 +1,674 @@
+2025-08-25 12:07:08,902 - INFO -ROOT FOLDER PATH: /home/bio/Desktop/AA_WWD/ANUBI/output_0825_1
+2025-08-25 12:07:09,050 - INFO -conda activate path --> /home/bio/ls/bin/activate version: conda 25.5.1
+2025-08-25 12:07:09,051 - INFO -Python --> /home/bio/ls/bin/python version: Python 3.12.2
+2025-08-25 12:07:09,052 - INFO -VMD path --> /usr/local/bin/vmd 
+2025-08-25 12:07:09,052 - INFO -gmx path --> /opt/gromacs-2024.4/bin/gmx 
+2025-08-25 12:07:09,340 - INFO -gmxMMPBSA is installed
+2025-08-25 12:07:09,340 - INFO -The structure file is /home/bio/Desktop/AA_WWD/ANUBI/DATA/HLA_BiAB_protein_50ns.pdb
+2025-08-25 12:07:09,362 - INFO -#### Begin with configuration0 ####
+2025-08-25 12:07:09,362 - INFO -PATH : /home/bio/Desktop/AA_WWD/ANUBI/output_0825_1/configuration
+2025-08-25 12:07:09,520 - INFO -Topology generation completed successfully.
+2025-08-25 12:07:09,568 - INFO -Simulation box definition completed successfully.
+2025-08-25 12:07:10,479 - INFO -Water and ions successfully added to the system.
+2025-08-25 12:07:17,376 - INFO -Energy minimization completed successfully.
+2025-08-25 12:07:17,376 - INFO -Running NVT MD for temperature equilibration.
+2025-08-25 12:10:43,360 - INFO -Running MD Production cycyle1
+2025-08-25 12:26:38,215 - INFO -MD Production cycyle1 Done
+2025-08-25 12:26:38,220 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 12:26:38,226 - INFO -Running MD Production cycyle2
+2025-08-25 12:26:40,826 - INFO -Running gmxMMPBSA_cycle1
+2025-08-25 12:37:06,830 - INFO -Data Analysis.
+2025-08-25 12:37:06,844 - INFO -Results for cycle1:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -70.5 | -242.2 | -96.6 | 268.3 | 0.0 | -51.0 | -458.4 | -70.7 | -71.0
+STD Values: STD | 8.6 | 23.3 | 6.6 | 20.5 | 0.0 | 0.3 | 90.4 | nan | 8.6
+2025-08-25 12:37:06,860 - INFO -Cleaning files.
+2025-08-25 12:37:06,860 - INFO -Moving files.
+2025-08-25 12:52:50,471 - INFO -MD Production cycyle2 Done
+2025-08-25 12:52:50,477 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 12:52:50,482 - INFO -Running MD Production cycyle3
+2025-08-25 12:52:53,010 - INFO -Running gmxMMPBSA_cycle2
+2025-08-25 13:03:35,957 - INFO -Data Analysis.
+2025-08-25 13:03:35,985 - INFO -Results for cycle2:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -68.6 | -270.8 | -99.2 | 301.4 | 0.0 | -57.2 | -510.9 | -69.5 | -68.7
+STD Values: STD | 7.3 | 17.1 | 5.2 | 15.5 | 0.0 | 0.2 | 66.7 | nan | 7.3
+2025-08-25 13:03:35,985 - INFO -Cleaning files.
+2025-08-25 13:03:35,985 - INFO -Moving files.
+2025-08-25 13:18:25,268 - INFO -MD Production cycyle3 Done
+2025-08-25 13:18:25,274 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 13:18:25,280 - INFO -Running MD Production cycyle4
+2025-08-25 13:18:27,877 - INFO -Running gmxMMPBSA_cycle3
+2025-08-25 13:29:09,890 - INFO -Data Analysis.
+2025-08-25 13:29:09,905 - INFO -Results for cycle3:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -65.8 | -247.0 | -97.1 | 278.3 | 0.0 | -52.5 | -462.6 | -66.0 | -66.2
+STD Values: STD | 7.9 | 21.8 | 7.0 | 18.4 | 0.0 | 0.3 | 83.8 | nan | 7.9
+2025-08-25 13:29:09,905 - INFO -Cleaning files.
+2025-08-25 13:29:09,905 - INFO -Moving files.
+2025-08-25 13:43:51,496 - INFO -MD Production cycyle4 Done
+2025-08-25 13:43:51,503 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 13:43:51,508 - INFO -Running MD Production cycyle5
+2025-08-25 13:43:54,062 - INFO -Running gmxMMPBSA_cycle4
+2025-08-25 13:54:29,660 - INFO -Data Analysis.
+2025-08-25 13:54:29,685 - INFO -Results for cycle4:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -61.6 | -245.9 | -87.0 | 271.3 | 0.0 | -51.7 | -466.4 | -62.4 | -62.1
+STD Values: STD | 9.4 | 20.0 | 6.1 | 16.2 | 0.0 | 0.4 | 76.3 | nan | 9.4
+2025-08-25 13:54:29,686 - INFO -Cleaning files.
+2025-08-25 13:54:29,686 - INFO -Moving files.
+2025-08-25 14:10:05,994 - INFO -MD Production cycyle5 Done
+2025-08-25 14:10:06,003 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 14:10:06,008 - INFO -Running MD Production cycyle6
+2025-08-25 14:10:08,591 - INFO -Running gmxMMPBSA_cycle5
+2025-08-25 14:20:12,558 - INFO -Data Analysis.
+2025-08-25 14:20:12,571 - INFO -Results for cycle5:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -70.3 | -284.2 | -93.4 | 307.3 | 0.0 | -59.2 | -545.4 | -71.6 | -71.1
+STD Values: STD | 8.0 | 20.1 | 5.8 | 16.4 | 0.0 | 0.4 | 76.7 | nan | 8.0
+2025-08-25 14:20:12,571 - INFO -Cleaning files.
+2025-08-25 14:20:12,571 - INFO -Moving files.
+2025-08-25 14:39:20,567 - INFO -MD Production cycyle6 Done
+2025-08-25 14:39:20,574 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 14:39:20,579 - INFO -Running MD Production cycyle7
+2025-08-25 14:39:23,156 - INFO -Running gmxMMPBSA_cycle6
+2025-08-25 14:49:41,519 - INFO -Data Analysis.
+2025-08-25 14:49:41,552 - INFO -Results for cycle6:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -69.5 | -265.5 | -96.5 | 292.6 | 0.0 | -55.8 | -503.9 | -69.3 | -69.3
+STD Values: STD | 7.5 | 24.1 | 6.4 | 24.2 | 0.0 | -0.0 | 96.5 | nan | 7.5
+2025-08-25 14:49:41,552 - INFO -Cleaning files.
+2025-08-25 14:49:41,552 - INFO -Moving files.
+2025-08-25 15:04:24,549 - INFO -MD Production cycyle7 Done
+2025-08-25 15:04:24,556 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 15:04:24,561 - INFO -Running MD Production cycyle8
+2025-08-25 15:04:27,159 - INFO -Running gmxMMPBSA_cycle7
+2025-08-25 15:14:29,478 - INFO -Data Analysis.
+2025-08-25 15:14:29,521 - INFO -Results for cycle7:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -57.2 | -225.6 | -85.3 | 253.7 | 0.0 | -47.9 | -423.2 | -57.3 | -57.6
+STD Values: STD | 8.9 | 30.9 | 5.9 | 25.8 | 0.0 | 0.5 | 118.5 | nan | 8.9
+2025-08-25 15:14:29,521 - INFO -Cleaning files.
+2025-08-25 15:14:29,521 - INFO -Moving files.
+2025-08-25 15:29:21,871 - INFO -MD Production cycyle8 Done
+2025-08-25 15:29:21,877 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 15:29:21,882 - INFO -Running MD Production cycyle9
+2025-08-25 15:29:24,253 - INFO -Running gmxMMPBSA_cycle8
+2025-08-25 15:39:59,878 - INFO -Data Analysis.
+2025-08-25 15:39:59,907 - INFO -Results for cycle8:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -65.0 | -259.4 | -91.7 | 286.2 | 0.0 | -54.6 | -492.1 | -65.1 | -65.4
+STD Values: STD | 7.6 | 23.0 | 5.7 | 20.3 | 0.0 | 0.3 | 89.5 | nan | 7.6
+2025-08-25 15:39:59,907 - INFO -Cleaning files.
+2025-08-25 15:39:59,907 - INFO -Moving files.
+2025-08-25 15:54:52,475 - INFO -MD Production cycyle9 Done
+2025-08-25 15:54:52,481 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 15:54:52,486 - INFO -Running MD Production cycyle10
+2025-08-25 15:54:55,069 - INFO -Running gmxMMPBSA_cycle9
+2025-08-25 16:05:13,832 - INFO -Data Analysis.
+2025-08-25 16:05:13,843 - INFO -Results for cycle9:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -69.5 | -262.2 | -93.9 | 286.6 | 0.0 | -54.9 | -499.9 | -68.7 | -68.9
+STD Values: STD | 7.9 | 23.6 | 5.5 | 20.4 | 0.0 | 0.3 | 91.3 | nan | 7.9
+2025-08-25 16:05:13,843 - INFO -Cleaning files.
+2025-08-25 16:05:13,843 - INFO -Moving files.
+2025-08-25 16:21:03,354 - INFO -MD Production cycyle10 Done
+2025-08-25 16:21:03,361 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 16:21:05,523 - INFO -Running gmxMMPBSA_cycle10
+2025-08-25 16:26:49,972 - INFO -Data Analysis.
+2025-08-25 16:26:49,978 - INFO -Results for cycle10:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -67.7 | -242.5 | -91.9 | 266.7 | 0.0 | -50.9 | -460.6 | -67.7 | -68.0
+STD Values: STD | 8.5 | 22.4 | 5.9 | 17.0 | 0.0 | 0.5 | 84.2 | nan | 8.5
+2025-08-25 16:26:49,978 - INFO -Cleaning files.
+2025-08-25 16:26:49,978 - INFO -Moving files.
+2025-08-25 16:26:50,058 - INFO -Making the starting PDB for the next Mutation from LastFrame_cycle10.gro
+2025-08-25 16:26:50,484 - INFO -Making the average of the cycles results.
+2025-08-25 16:26:50,493 - INFO -Results for Mutant0
+DeltaG(kcal/mol): -66.6 +- 4.3 kcal/mol
+Coul(kcal/mol): -254.5 +- 17.0 kcal/mol
+VdW(kcal/mol): -93.3 +- 4.5 kcal/mol
+PolSol(kcal/mol): 281.2 +- 16.7 kcal/mol
+NpoSol(kcal/mol): 0.0 +- 0.0 kcal/mol
+SF1: -53.6 +- 0.0 kcal/mol
+SF2: -482.3 +- 67.8 kcal/mol
+MedianDeltaG(kcal/mol): -68.2 +- nan kcal/mol
+DeltaG_2s(kcal/mol): -67.6 +- 4.3 kcal/mol
+2025-08-25 16:26:50,493 - INFO -Finished with Configuration0
+2025-08-25 16:26:50,494 - INFO -#### Begin with Mutant1 ####
+2025-08-25 16:26:50,494 - INFO -PATH : /home/bio/Desktop/AA_WWD/ANUBI/output_0825_1/Mutant1
+2025-08-25 16:26:50,494 - INFO -Making a new mutation.
+2025-08-25 16:26:51,264 - INFO -Topology generation completed successfully.
+2025-08-25 16:26:51,310 - INFO -Simulation box definition completed successfully.
+2025-08-25 16:26:52,223 - INFO -Water and ions successfully added to the system.
+2025-08-25 16:27:00,059 - INFO -Energy minimization completed successfully.
+2025-08-25 16:27:00,059 - INFO -Running NVT MD for temperature equilibration.
+2025-08-25 16:30:16,656 - INFO -Running MD Production cycyle1
+2025-08-25 16:46:30,415 - INFO -MD Production cycyle1 Done
+2025-08-25 16:46:30,420 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 16:46:30,426 - INFO -Running MD Production cycyle2
+2025-08-25 16:46:32,907 - INFO -Running gmxMMPBSA_cycle1
+2025-08-25 16:57:14,501 - INFO -Data Analysis.
+2025-08-25 16:57:14,513 - INFO -Results for cycle1:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -65.0 | -230.4 | -93.0 | 258.4 | 0.0 | -48.9 | -432.9 | -65.4 | -65.3
+STD Values: STD | 8.2 | 22.3 | 5.5 | 19.9 | 0.0 | 0.2 | 86.8 | nan | 8.2
+2025-08-25 16:57:14,513 - INFO -Cleaning files.
+2025-08-25 16:57:14,513 - INFO -Moving files.
+2025-08-25 17:13:29,445 - INFO -MD Production cycyle2 Done
+2025-08-25 17:13:29,451 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 17:13:29,457 - INFO -Running MD Production cycyle3
+2025-08-25 17:13:32,050 - INFO -Running gmxMMPBSA_cycle2
+2025-08-25 17:23:40,212 - INFO -Data Analysis.
+2025-08-25 17:23:40,245 - INFO -Results for cycle2:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -76.3 | -291.0 | -89.7 | 304.3 | 0.0 | -59.5 | -568.6 | -76.8 | -76.4
+STD Values: STD | 8.7 | 31.8 | 5.1 | 27.7 | 0.0 | 0.4 | 123.0 | nan | 8.7
+2025-08-25 17:23:40,245 - INFO -Cleaning files.
+2025-08-25 17:23:40,245 - INFO -Moving files.
+2025-08-25 17:38:52,134 - INFO -MD Production cycyle3 Done
+2025-08-25 17:38:52,141 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 17:38:52,146 - INFO -Running MD Production cycyle4
+2025-08-25 17:38:54,673 - INFO -Running gmxMMPBSA_cycle3
+2025-08-25 17:49:42,206 - INFO -Data Analysis.
+2025-08-25 17:49:42,237 - INFO -Results for cycle3:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -54.5 | -199.7 | -85.7 | 230.9 | 0.0 | -43.1 | -368.3 | -54.7 | -54.7
+STD Values: STD | 7.8 | 18.4 | 5.9 | 17.3 | 0.0 | 0.1 | 72.4 | nan | 7.8
+2025-08-25 17:49:42,237 - INFO -Cleaning files.
+2025-08-25 17:49:42,238 - INFO -Moving files.
+2025-08-25 18:06:45,924 - INFO -MD Production cycyle4 Done
+2025-08-25 18:06:45,933 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 18:06:45,938 - INFO -Running MD Production cycyle5
+2025-08-25 18:06:48,550 - INFO -Running gmxMMPBSA_cycle4
+2025-08-25 18:17:39,861 - INFO -Data Analysis.
+2025-08-25 18:17:39,889 - INFO -Results for cycle4:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -84.8 | -239.2 | -96.4 | 250.9 | 0.0 | -49.0 | -466.6 | -84.8 | -84.9
+STD Values: STD | 10.8 | 24.2 | 5.0 | 23.6 | 0.0 | 0.1 | 96.2 | nan | 10.8
+2025-08-25 18:17:39,889 - INFO -Cleaning files.
+2025-08-25 18:17:39,889 - INFO -Moving files.
+2025-08-25 18:32:24,494 - INFO -MD Production cycyle5 Done
+2025-08-25 18:32:24,501 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 18:32:24,506 - INFO -Running MD Production cycyle6
+2025-08-25 18:32:27,109 - INFO -Running gmxMMPBSA_cycle5
+2025-08-25 18:42:33,420 - INFO -Data Analysis.
+2025-08-25 18:42:33,445 - INFO -Results for cycle5:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -67.2 | -219.7 | -90.0 | 242.6 | 0.0 | -46.2 | -416.6 | -68.8 | -68.0
+STD Values: STD | 8.9 | 16.1 | 5.4 | 14.4 | 0.0 | 0.2 | 62.7 | nan | 8.9
+2025-08-25 18:42:33,446 - INFO -Cleaning files.
+2025-08-25 18:42:33,446 - INFO -Moving files.
+2025-08-25 18:59:32,982 - INFO -MD Production cycyle6 Done
+2025-08-25 18:59:32,988 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 18:59:32,993 - INFO -Running MD Production cycyle7
+2025-08-25 18:59:35,612 - INFO -Running gmxMMPBSA_cycle6
+2025-08-25 19:09:43,074 - INFO -Data Analysis.
+2025-08-25 19:09:43,093 - INFO -Results for cycle6:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -69.0 | -249.3 | -92.4 | 272.7 | 0.0 | -52.2 | -475.3 | -68.8 | -69.1
+STD Values: STD | 8.0 | 23.9 | 5.7 | 20.4 | 0.0 | 0.3 | 92.0 | nan | 8.0
+2025-08-25 19:09:43,093 - INFO -Cleaning files.
+2025-08-25 19:09:43,094 - INFO -Moving files.
+2025-08-25 19:26:40,954 - INFO -MD Production cycyle7 Done
+2025-08-25 19:26:40,960 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 19:26:40,965 - INFO -Running MD Production cycyle8
+2025-08-25 19:26:43,533 - INFO -Running gmxMMPBSA_cycle7
+2025-08-25 19:37:30,426 - INFO -Data Analysis.
+2025-08-25 19:37:30,450 - INFO -Results for cycle7:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -68.2 | -252.4 | -87.9 | 272.0 | 0.0 | -52.4 | -485.1 | -67.5 | -68.3
+STD Values: STD | 9.3 | 27.9 | 5.8 | 23.7 | 0.0 | 0.4 | 107.5 | nan | 9.3
+2025-08-25 19:37:30,450 - INFO -Cleaning files.
+2025-08-25 19:37:30,450 - INFO -Moving files.
+2025-08-25 19:52:29,082 - INFO -MD Production cycyle8 Done
+2025-08-25 19:52:29,091 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 19:52:29,097 - INFO -Running MD Production cycyle9
+2025-08-25 19:52:31,712 - INFO -Running gmxMMPBSA_cycle8
+2025-08-25 20:03:10,383 - INFO -Data Analysis.
+2025-08-25 20:03:10,393 - INFO -Results for cycle8:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -68.8 | -274.2 | -87.9 | 293.3 | 0.0 | -56.8 | -529.5 | -68.4 | -68.9
+STD Values: STD | 8.3 | 23.4 | 6.8 | 19.9 | 0.0 | 0.4 | 90.0 | nan | 8.3
+2025-08-25 20:03:10,393 - INFO -Cleaning files.
+2025-08-25 20:03:10,394 - INFO -Moving files.
+2025-08-25 20:19:05,914 - INFO -MD Production cycyle9 Done
+2025-08-25 20:19:05,920 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 20:19:05,926 - INFO -Running MD Production cycyle10
+2025-08-25 20:19:08,539 - INFO -Running gmxMMPBSA_cycle9
+2025-08-25 20:29:15,928 - INFO -Data Analysis.
+2025-08-25 20:29:15,957 - INFO -Results for cycle9:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -66.1 | -221.1 | -83.7 | 238.7 | 0.0 | -46.0 | -424.5 | -65.9 | -66.0
+STD Values: STD | 7.5 | 17.5 | 5.1 | 18.0 | 0.0 | -0.0 | 70.4 | nan | 7.5
+2025-08-25 20:29:15,957 - INFO -Cleaning files.
+2025-08-25 20:29:15,958 - INFO -Moving files.
+2025-08-25 20:46:15,851 - INFO -MD Production cycyle10 Done
+2025-08-25 20:46:15,857 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 20:46:18,038 - INFO -Running gmxMMPBSA_cycle10
+2025-08-25 20:52:33,265 - INFO -Data Analysis.
+2025-08-25 20:52:33,270 - INFO -Results for cycle10:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -69.3 | -220.5 | -89.9 | 241.1 | 0.0 | -46.2 | -420.5 | -69.4 | -69.4
+STD Values: STD | 6.4 | 22.0 | 5.6 | 18.8 | 0.0 | 0.3 | 84.7 | nan | 6.4
+2025-08-25 20:52:33,270 - INFO -Cleaning files.
+2025-08-25 20:52:33,270 - INFO -Moving files.
+2025-08-25 20:52:33,348 - INFO -Making the starting PDB for the next Mutation from LastFrame_cycle10.gro
+2025-08-25 20:52:33,756 - INFO -Making the average of the cycles results.
+2025-08-25 20:52:33,760 - INFO -Results for Mutant1
+DeltaG(kcal/mol): -68.9 +- 7.8 kcal/mol
+Coul(kcal/mol): -239.8 +- 27.6 kcal/mol
+VdW(kcal/mol): -89.7 +- 3.7 kcal/mol
+PolSol(kcal/mol): 260.5 +- 24.5 kcal/mol
+NpoSol(kcal/mol): 0.0 +- 0.0 kcal/mol
+SF1: -50.0 +- 0.3 kcal/mol
+SF2: -458.8 +- 107.5 kcal/mol
+MedianDeltaG(kcal/mol): -68.5 +- nan kcal/mol
+DeltaG_2s(kcal/mol): -67.2 +- 7.8 kcal/mol
+2025-08-25 20:52:33,760 - INFO -Metropolis algorithm
+2025-08-25 20:52:33,760 - INFO -Random Number: 0.3926010551676161  Metropolis Prob: 1  AVG: -68.9  Stored AVG: -66.6 delta_delta_G:-2.3000000000000114
+2025-08-25 20:52:33,760 - INFO -New Configuration Accepted
+2025-08-25 20:52:33,761 - INFO -Finished Mutant1
+2025-08-25 20:52:33,761 - INFO -#### Begin with Mutant2 ####
+2025-08-25 20:52:33,761 - INFO -PATH : /home/bio/Desktop/AA_WWD/ANUBI/output_0825_1/Mutant2
+2025-08-25 20:52:33,761 - INFO -Making a new mutation.
+2025-08-25 20:52:34,504 - INFO -Topology generation completed successfully.
+2025-08-25 20:52:34,551 - INFO -Simulation box definition completed successfully.
+2025-08-25 20:52:35,506 - INFO -Water and ions successfully added to the system.
+2025-08-25 20:52:42,745 - INFO -Energy minimization completed successfully.
+2025-08-25 20:52:42,745 - INFO -Running NVT MD for temperature equilibration.
+2025-08-25 20:56:01,254 - INFO -Running MD Production cycyle1
+2025-08-25 21:12:21,639 - INFO -MD Production cycyle1 Done
+2025-08-25 21:12:21,644 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 21:12:21,650 - INFO -Running MD Production cycyle2
+2025-08-25 21:12:24,286 - INFO -Running gmxMMPBSA_cycle1
+2025-08-25 21:22:58,842 - INFO -Data Analysis.
+2025-08-25 21:22:58,866 - INFO -Results for cycle1:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -63.6 | -279.6 | -94.2 | 310.1 | 0.0 | -59.0 | -528.7 | -62.9 | -63.1
+STD Values: STD | 8.6 | 33.4 | 5.4 | 29.7 | 0.0 | 0.4 | 129.8 | nan | 8.6
+2025-08-25 21:22:58,866 - INFO -Cleaning files.
+2025-08-25 21:22:58,866 - INFO -Moving files.
+2025-08-25 21:40:28,261 - INFO -MD Production cycyle2 Done
+2025-08-25 21:40:28,268 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 21:40:28,273 - INFO -Running MD Production cycyle3
+2025-08-25 21:40:30,776 - INFO -Running gmxMMPBSA_cycle2
+2025-08-25 21:50:49,734 - INFO -Data Analysis.
+2025-08-25 21:50:49,776 - INFO -Results for cycle2:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -57.8 | -245.5 | -85.7 | 273.3 | 0.0 | -51.9 | -463.1 | -58.2 | -57.7
+STD Values: STD | 9.7 | 28.6 | 5.8 | 25.1 | 0.0 | 0.3 | 110.9 | nan | 9.7
+2025-08-25 21:50:49,777 - INFO -Cleaning files.
+2025-08-25 21:50:49,777 - INFO -Moving files.
+2025-08-25 22:11:01,741 - INFO -MD Production cycyle3 Done
+2025-08-25 22:11:01,748 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 22:11:01,753 - INFO -Running MD Production cycyle4
+2025-08-25 22:11:04,303 - INFO -Running gmxMMPBSA_cycle3
+2025-08-25 22:21:18,171 - INFO -Data Analysis.
+2025-08-25 22:21:18,181 - INFO -Results for cycle3:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -62.8 | -279.3 | -88.6 | 305.1 | 0.0 | -58.4 | -532.7 | -63.7 | -62.5
+STD Values: STD | 11.7 | 25.8 | 6.2 | 20.8 | 0.0 | 0.5 | 98.3 | nan | 11.7
+2025-08-25 22:21:18,181 - INFO -Cleaning files.
+2025-08-25 22:21:18,181 - INFO -Moving files.
+2025-08-25 22:37:51,335 - INFO -MD Production cycyle4 Done
+2025-08-25 22:37:51,344 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 22:37:51,350 - INFO -Running MD Production cycyle5
+2025-08-25 22:37:53,938 - INFO -Running gmxMMPBSA_cycle4
+2025-08-25 22:48:08,263 - INFO -Data Analysis.
+2025-08-25 22:48:08,284 - INFO -Results for cycle4:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -70.0 | -269.8 | -92.8 | 292.5 | 0.0 | -56.2 | -516.8 | -70.0 | -70.6
+STD Values: STD | 8.4 | 20.5 | 6.0 | 18.1 | 0.0 | 0.2 | 79.6 | nan | 8.4
+2025-08-25 22:48:08,285 - INFO -Cleaning files.
+2025-08-25 22:48:08,285 - INFO -Moving files.
+2025-08-25 23:08:22,561 - INFO -MD Production cycyle5 Done
+2025-08-25 23:08:22,568 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 23:08:22,574 - INFO -Running MD Production cycyle6
+2025-08-25 23:08:25,228 - INFO -Running gmxMMPBSA_cycle5
+2025-08-25 23:18:45,295 - INFO -Data Analysis.
+2025-08-25 23:18:45,323 - INFO -Results for cycle5:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -59.5 | -245.9 | -100.5 | 286.9 | 0.0 | -53.3 | -450.8 | -59.9 | -59.5
+STD Values: STD | 7.4 | 20.1 | 6.1 | 19.7 | 0.0 | 0.0 | 80.0 | nan | 7.4
+2025-08-25 23:18:45,324 - INFO -Cleaning files.
+2025-08-25 23:18:45,324 - INFO -Moving files.
+2025-08-25 23:36:21,169 - INFO -MD Production cycyle6 Done
+2025-08-25 23:36:21,176 - INFO -Building input files for gmx MMPBSA.
+2025-08-25 23:36:21,182 - INFO -Running MD Production cycyle7
+2025-08-25 23:36:23,567 - INFO -Running gmxMMPBSA_cycle6
+2025-08-25 23:47:07,448 - INFO -Data Analysis.
+2025-08-25 23:47:07,473 - INFO -Results for cycle6:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -72.5 | -269.0 | -87.6 | 284.1 | 0.0 | -55.3 | -523.0 | -72.1 | -72.7
+STD Values: STD | 9.2 | 21.5 | 6.0 | 19.7 | 0.0 | 0.2 | 84.2 | nan | 9.2
+2025-08-25 23:47:07,473 - INFO -Cleaning files.
+2025-08-25 23:47:07,473 - INFO -Moving files.
+2025-08-26 00:07:12,179 - INFO -MD Production cycyle7 Done
+2025-08-26 00:07:12,185 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 00:07:12,191 - INFO -Running MD Production cycyle8
+2025-08-26 00:07:14,825 - INFO -Running gmxMMPBSA_cycle7
+2025-08-26 00:17:09,326 - INFO -Data Analysis.
+2025-08-26 00:17:09,354 - INFO -Results for cycle7:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -63.5 | -264.6 | -97.8 | 299.0 | 0.0 | -56.4 | -494.9 | -64.5 | -63.9
+STD Values: STD | 8.7 | 27.2 | 6.4 | 27.5 | 0.0 | -0.0 | 109.2 | nan | 8.7
+2025-08-26 00:17:09,354 - INFO -Cleaning files.
+2025-08-26 00:17:09,354 - INFO -Moving files.
+2025-08-26 00:33:47,793 - INFO -MD Production cycyle8 Done
+2025-08-26 00:33:47,800 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 00:33:47,806 - INFO -Running MD Production cycyle9
+2025-08-26 00:33:50,433 - INFO -Running gmxMMPBSA_cycle8
+2025-08-26 00:44:22,771 - INFO -Data Analysis.
+2025-08-26 00:44:22,798 - INFO -Results for cycle8:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -66.8 | -281.4 | -105.4 | 319.9 | 0.0 | -60.1 | -524.2 | -66.8 | -66.8
+STD Values: STD | 9.0 | 27.5 | 6.4 | 23.2 | 0.0 | 0.4 | 105.7 | nan | 9.0
+2025-08-26 00:44:22,799 - INFO -Cleaning files.
+2025-08-26 00:44:22,799 - INFO -Moving files.
+2025-08-26 00:59:34,209 - INFO -MD Production cycyle9 Done
+2025-08-26 00:59:34,216 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 00:59:34,221 - INFO -Running MD Production cycyle10
+2025-08-26 00:59:36,756 - INFO -Running gmxMMPBSA_cycle9
+2025-08-26 01:09:35,047 - INFO -Data Analysis.
+2025-08-26 01:09:35,074 - INFO -Results for cycle9:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -60.1 | -264.8 | -95.4 | 300.0 | 0.0 | -56.5 | -494.4 | -60.5 | -60.6
+STD Values: STD | 8.4 | 21.7 | 6.2 | 18.0 | 0.0 | 0.4 | 83.2 | nan | 8.4
+2025-08-26 01:09:35,074 - INFO -Cleaning files.
+2025-08-26 01:09:35,074 - INFO -Moving files.
+2025-08-26 01:24:48,939 - INFO -MD Production cycyle10 Done
+2025-08-26 01:24:48,945 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 01:24:51,139 - INFO -Running gmxMMPBSA_cycle10
+2025-08-26 01:31:00,483 - INFO -Data Analysis.
+2025-08-26 01:31:00,488 - INFO -Results for cycle10:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -74.6 | -287.2 | -89.9 | 302.4 | 0.0 | -59.0 | -559.1 | -75.2 | -74.7
+STD Values: STD | 11.6 | 25.0 | 5.6 | 20.7 | 0.0 | 0.4 | 95.8 | nan | 11.6
+2025-08-26 01:31:00,488 - INFO -Cleaning files.
+2025-08-26 01:31:00,489 - INFO -Moving files.
+2025-08-26 01:31:00,567 - INFO -Making the starting PDB for the next Mutation from LastFrame_cycle10.gro
+2025-08-26 01:31:00,989 - INFO -Making the average of the cycles results.
+2025-08-26 01:31:00,994 - INFO -Results for Mutant2
+DeltaG(kcal/mol): -65.1 +- 5.7 kcal/mol
+Coul(kcal/mol): -268.7 +- 14.2 kcal/mol
+VdW(kcal/mol): -93.8 +- 6.2 kcal/mol
+PolSol(kcal/mol): 297.3 +- 13.6 kcal/mol
+NpoSol(kcal/mol): 0.0 +- 0.0 kcal/mol
+SF1: -56.6 +- 0.1 kcal/mol
+SF2: -508.8 +- 56.3 kcal/mol
+MedianDeltaG(kcal/mol): -63.5 +- nan kcal/mol
+DeltaG_2s(kcal/mol): -65.1 +- 5.7 kcal/mol
+2025-08-26 01:31:00,994 - INFO -Metropolis algorithm
+2025-08-26 01:31:00,994 - INFO -Random Number: 0.3179311727747204  Metropolis Prob: 0.02237077185616534  AVG: -65.1  Stored AVG: -68.9 delta_delta_G:3.8000000000000114
+2025-08-26 01:31:00,994 - INFO -New Configuration Declined
+2025-08-26 01:31:00,994 - INFO -Finished Mutant2
+2025-08-26 01:31:00,994 - INFO -#### Begin with Mutant3 ####
+2025-08-26 01:31:00,994 - INFO -PATH : /home/bio/Desktop/AA_WWD/ANUBI/output_0825_1/Mutant3
+2025-08-26 01:31:00,994 - INFO -Making a new mutation.
+2025-08-26 01:31:01,727 - INFO -Topology generation completed successfully.
+2025-08-26 01:31:01,777 - INFO -Simulation box definition completed successfully.
+2025-08-26 01:31:02,716 - INFO -Water and ions successfully added to the system.
+2025-08-26 01:31:11,523 - INFO -Energy minimization completed successfully.
+2025-08-26 01:31:11,523 - INFO -Running NVT MD for temperature equilibration.
+2025-08-26 01:34:31,636 - INFO -Running MD Production cycyle1
+2025-08-26 01:50:59,055 - INFO -MD Production cycyle1 Done
+2025-08-26 01:50:59,060 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 01:50:59,065 - INFO -Running MD Production cycyle2
+2025-08-26 01:51:01,679 - INFO -Running gmxMMPBSA_cycle1
+2025-08-26 02:01:12,681 - INFO -Data Analysis.
+2025-08-26 02:01:12,697 - INFO -Results for cycle1:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -64.9 | -248.6 | -94.1 | 277.8 | 0.0 | -52.6 | -468.0 | -64.9 | -65.2
+STD Values: STD | 7.0 | 20.4 | 6.1 | 16.6 | 0.0 | 0.4 | 77.9 | nan | 7.0
+2025-08-26 02:01:12,697 - INFO -Cleaning files.
+2025-08-26 02:01:12,697 - INFO -Moving files.
+2025-08-26 02:16:27,590 - INFO -MD Production cycyle2 Done
+2025-08-26 02:16:27,598 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 02:16:27,603 - INFO -Running MD Production cycyle3
+2025-08-26 02:16:30,093 - INFO -Running gmxMMPBSA_cycle2
+2025-08-26 02:26:29,541 - INFO -Data Analysis.
+2025-08-26 02:26:29,565 - INFO -Results for cycle2:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -64.7 | -235.2 | -102.5 | 273.0 | 0.0 | -50.8 | -432.6 | -64.7 | -64.6
+STD Values: STD | 8.9 | 20.4 | 5.9 | 18.4 | 0.0 | 0.2 | 79.8 | nan | 8.9
+2025-08-26 02:26:29,566 - INFO -Cleaning files.
+2025-08-26 02:26:29,566 - INFO -Moving files.
+2025-08-26 02:43:02,099 - INFO -MD Production cycyle3 Done
+2025-08-26 02:43:02,106 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 02:43:02,112 - INFO -Running MD Production cycyle4
+2025-08-26 02:43:04,751 - INFO -Running gmxMMPBSA_cycle3
+2025-08-26 02:53:20,327 - INFO -Data Analysis.
+2025-08-26 02:53:20,345 - INFO -Results for cycle3:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -69.5 | -249.4 | -100.1 | 280.1 | 0.0 | -53.0 | -468.2 | -69.7 | -69.8
+STD Values: STD | 9.1 | 20.4 | 6.2 | 18.1 | 0.0 | 0.2 | 79.4 | nan | 9.1
+2025-08-26 02:53:20,345 - INFO -Cleaning files.
+2025-08-26 02:53:20,345 - INFO -Moving files.
+2025-08-26 03:08:44,355 - INFO -MD Production cycyle4 Done
+2025-08-26 03:08:44,362 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 03:08:44,368 - INFO -Running MD Production cycyle5
+2025-08-26 03:08:46,910 - INFO -Running gmxMMPBSA_cycle4
+2025-08-26 03:19:08,102 - INFO -Data Analysis.
+2025-08-26 03:19:08,134 - INFO -Results for cycle4:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -68.3 | -234.4 | -84.1 | 250.1 | 0.0 | -48.4 | -453.0 | -67.9 | -68.4
+STD Values: STD | 9.2 | 23.1 | 5.7 | 19.6 | 0.0 | 0.4 | 88.8 | nan | 9.2
+2025-08-26 03:19:08,134 - INFO -Cleaning files.
+2025-08-26 03:19:08,135 - INFO -Moving files.
+2025-08-26 03:34:28,106 - INFO -MD Production cycyle5 Done
+2025-08-26 03:34:28,113 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 03:34:28,118 - INFO -Running MD Production cycyle6
+2025-08-26 03:34:30,739 - INFO -Running gmxMMPBSA_cycle5
+2025-08-26 03:44:53,474 - INFO -Data Analysis.
+2025-08-26 03:44:53,486 - INFO -Results for cycle5:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -68.7 | -250.1 | -87.2 | 268.6 | 0.0 | -51.9 | -481.7 | -68.8 | -69.1
+STD Values: STD | 7.5 | 22.8 | 7.9 | 19.9 | 0.0 | 0.3 | 88.4 | nan | 7.5
+2025-08-26 03:44:53,486 - INFO -Cleaning files.
+2025-08-26 03:44:53,486 - INFO -Moving files.
+2025-08-26 04:01:23,590 - INFO -MD Production cycyle6 Done
+2025-08-26 04:01:23,597 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 04:01:23,603 - INFO -Running MD Production cycyle7
+2025-08-26 04:01:26,074 - INFO -Running gmxMMPBSA_cycle6
+2025-08-26 04:12:03,384 - INFO -Data Analysis.
+2025-08-26 04:12:03,409 - INFO -Results for cycle6:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -70.3 | -241.2 | -91.7 | 262.6 | 0.0 | -50.4 | -461.0 | -70.3 | -70.3
+STD Values: STD | 11.6 | 20.7 | 5.9 | 15.4 | 0.0 | 0.5 | 77.5 | nan | 11.6
+2025-08-26 04:12:03,410 - INFO -Cleaning files.
+2025-08-26 04:12:03,410 - INFO -Moving files.
+2025-08-26 04:32:17,451 - INFO -MD Production cycyle7 Done
+2025-08-26 04:32:17,458 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 04:32:17,463 - INFO -Running MD Production cycyle8
+2025-08-26 04:32:19,951 - INFO -Running gmxMMPBSA_cycle7
+2025-08-26 04:42:26,039 - INFO -Data Analysis.
+2025-08-26 04:42:26,061 - INFO -Results for cycle7:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -65.1 | -243.7 | -84.9 | 263.5 | 0.0 | -50.7 | -467.6 | -65.4 | -65.3
+STD Values: STD | 6.5 | 20.9 | 7.5 | 19.9 | 0.0 | 0.1 | 82.6 | nan | 6.5
+2025-08-26 04:42:26,061 - INFO -Cleaning files.
+2025-08-26 04:42:26,061 - INFO -Moving files.
+2025-08-26 04:59:53,129 - INFO -MD Production cycyle8 Done
+2025-08-26 04:59:53,137 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 04:59:53,143 - INFO -Running MD Production cycyle9
+2025-08-26 04:59:55,755 - INFO -Running gmxMMPBSA_cycle8
+2025-08-26 05:10:23,845 - INFO -Data Analysis.
+2025-08-26 05:10:23,871 - INFO -Results for cycle8:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -67.9 | -275.4 | -91.1 | 298.6 | 0.0 | -57.4 | -527.5 | -67.7 | -67.7
+STD Values: STD | 8.5 | 25.8 | 6.9 | 26.8 | 0.0 | -0.1 | 104.1 | nan | 8.5
+2025-08-26 05:10:23,871 - INFO -Cleaning files.
+2025-08-26 05:10:23,871 - INFO -Moving files.
+2025-08-26 05:28:02,073 - INFO -MD Production cycyle9 Done
+2025-08-26 05:28:02,080 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 05:28:02,087 - INFO -Running MD Production cycyle10
+2025-08-26 05:28:04,737 - INFO -Running gmxMMPBSA_cycle9
+2025-08-26 05:38:20,083 - INFO -Data Analysis.
+2025-08-26 05:38:20,109 - INFO -Results for cycle9:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -61.7 | -243.9 | -86.8 | 268.9 | 0.0 | -51.3 | -462.6 | -61.3 | -62.1
+STD Values: STD | 8.8 | 23.6 | 5.4 | 18.3 | 0.0 | 0.5 | 89.1 | nan | 8.8
+2025-08-26 05:38:20,110 - INFO -Cleaning files.
+2025-08-26 05:38:20,110 - INFO -Moving files.
+2025-08-26 05:53:44,792 - INFO -MD Production cycyle10 Done
+2025-08-26 05:53:44,801 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 05:53:46,981 - INFO -Running gmxMMPBSA_cycle10
+2025-08-26 05:59:38,348 - INFO -Data Analysis.
+2025-08-26 05:59:38,353 - INFO -Results for cycle10:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -69.5 | -243.2 | -90.6 | 264.3 | 0.0 | -50.8 | -465.3 | -69.4 | -69.6
+STD Values: STD | 8.4 | 22.5 | 5.8 | 18.1 | 0.0 | 0.4 | 85.6 | nan | 8.4
+2025-08-26 05:59:38,353 - INFO -Cleaning files.
+2025-08-26 05:59:38,373 - INFO -Moving files.
+2025-08-26 05:59:38,460 - INFO -Making the starting PDB for the next Mutation from LastFrame_cycle10.gro
+2025-08-26 05:59:38,891 - INFO -Making the average of the cycles results.
+2025-08-26 05:59:38,897 - INFO -Results for Mutant3
+DeltaG(kcal/mol): -67.1 +- 2.8 kcal/mol
+Coul(kcal/mol): -246.5 +- 11.5 kcal/mol
+VdW(kcal/mol): -91.3 +- 6.2 kcal/mol
+PolSol(kcal/mol): 270.8 +- 13.0 kcal/mol
+NpoSol(kcal/mol): 0.0 +- 0.0 kcal/mol
+SF1: -51.7 +- -0.1 kcal/mol
+SF2: -468.8 +- 47.4 kcal/mol
+MedianDeltaG(kcal/mol): -68.1 +- nan kcal/mol
+DeltaG_2s(kcal/mol): -67.1 +- 2.8 kcal/mol
+2025-08-26 05:59:38,897 - INFO -Metropolis algorithm
+2025-08-26 05:59:38,897 - INFO -Random Number: 0.38806847701496616  Metropolis Prob: 0.16529888822158467  AVG: -67.1  Stored AVG: -68.9 delta_delta_G:1.8000000000000114
+2025-08-26 05:59:38,897 - INFO -New Configuration Declined
+2025-08-26 05:59:38,898 - INFO -Finished Mutant3
+2025-08-26 05:59:38,898 - INFO -#### Begin with Mutant4 ####
+2025-08-26 05:59:38,898 - INFO -PATH : /home/bio/Desktop/AA_WWD/ANUBI/output_0825_1/Mutant4
+2025-08-26 05:59:38,898 - INFO -Making a new mutation.
+2025-08-26 05:59:39,596 - INFO -Topology generation completed successfully.
+2025-08-26 05:59:39,646 - INFO -Simulation box definition completed successfully.
+2025-08-26 05:59:40,578 - INFO -Water and ions successfully added to the system.
+2025-08-26 05:59:50,121 - INFO -Energy minimization completed successfully.
+2025-08-26 05:59:50,121 - INFO -Running NVT MD for temperature equilibration.
+2025-08-26 06:03:09,970 - INFO -Running MD Production cycyle1
+2025-08-26 06:19:27,665 - INFO -MD Production cycyle1 Done
+2025-08-26 06:19:27,670 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 06:19:27,676 - INFO -Running MD Production cycyle2
+2025-08-26 06:19:30,312 - INFO -Running gmxMMPBSA_cycle1
+2025-08-26 06:30:07,908 - INFO -Data Analysis.
+2025-08-26 06:30:07,926 - INFO -Results for cycle1:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -63.7 | -253.0 | -92.6 | 281.9 | 0.0 | -53.5 | -477.0 | -64.0 | -64.2
+STD Values: STD | 7.8 | 18.5 | 5.2 | 16.0 | 0.0 | 0.3 | 71.4 | nan | 7.8
+2025-08-26 06:30:07,926 - INFO -Cleaning files.
+2025-08-26 06:30:07,926 - INFO -Moving files.
+2025-08-26 06:47:34,631 - INFO -MD Production cycyle2 Done
+2025-08-26 06:47:34,638 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 06:47:34,644 - INFO -Running MD Production cycyle3
+2025-08-26 06:47:37,229 - INFO -Running gmxMMPBSA_cycle2
+2025-08-26 06:58:23,498 - INFO -Data Analysis.
+2025-08-26 06:58:23,521 - INFO -Results for cycle2:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -68.0 | -245.2 | -93.5 | 270.7 | 0.0 | -51.6 | -464.9 | -69.1 | -68.2
+STD Values: STD | 8.0 | 24.4 | 5.8 | 23.6 | 0.0 | 0.1 | 96.8 | nan | 8.0
+2025-08-26 06:58:23,521 - INFO -Cleaning files.
+2025-08-26 06:58:23,521 - INFO -Moving files.
+2025-08-26 07:15:42,055 - INFO -MD Production cycyle3 Done
+2025-08-26 07:15:42,062 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 07:15:42,068 - INFO -Running MD Production cycyle4
+2025-08-26 07:15:44,697 - INFO -Running gmxMMPBSA_cycle3
+2025-08-26 07:26:31,888 - INFO -Data Analysis.
+2025-08-26 07:26:31,917 - INFO -Results for cycle3:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -82.2 | -292.8 | -94.5 | 305.1 | 0.0 | -59.8 | -573.3 | -82.5 | -82.8
+STD Values: STD | 8.3 | 18.7 | 6.0 | 15.3 | 0.0 | 0.3 | 71.4 | nan | 8.3
+2025-08-26 07:26:31,917 - INFO -Cleaning files.
+2025-08-26 07:26:31,917 - INFO -Moving files.
+2025-08-26 07:43:54,222 - INFO -MD Production cycyle4 Done
+2025-08-26 07:43:54,231 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 07:43:54,237 - INFO -Running MD Production cycyle5
+2025-08-26 07:43:56,823 - INFO -Running gmxMMPBSA_cycle4
+2025-08-26 07:53:53,934 - INFO -Data Analysis.
+2025-08-26 07:53:53,977 - INFO -Results for cycle4:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -61.1 | -249.3 | -92.2 | 280.4 | 0.0 | -53.0 | -467.4 | -61.6 | -61.6
+STD Values: STD | 9.5 | 21.4 | 5.9 | 17.9 | 0.0 | 0.3 | 82.0 | nan | 9.5
+2025-08-26 07:53:53,977 - INFO -Cleaning files.
+2025-08-26 07:53:53,977 - INFO -Moving files.
+2025-08-26 08:10:26,706 - INFO -MD Production cycyle5 Done
+2025-08-26 08:10:26,712 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 08:10:26,718 - INFO -Running MD Production cycyle6
+2025-08-26 08:10:29,226 - INFO -Running gmxMMPBSA_cycle5
+2025-08-26 08:20:32,263 - INFO -Data Analysis.
+2025-08-26 08:20:32,291 - INFO -Results for cycle5:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -64.3 | -265.8 | -96.9 | 298.4 | 0.0 | -56.4 | -498.9 | -64.6 | -64.7
+STD Values: STD | 11.2 | 22.1 | 5.9 | 21.4 | 0.0 | 0.1 | 87.7 | nan | 11.2
+2025-08-26 08:20:32,291 - INFO -Cleaning files.
+2025-08-26 08:20:32,291 - INFO -Moving files.
+2025-08-26 08:38:02,442 - INFO -MD Production cycyle6 Done
+2025-08-26 08:38:02,449 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 08:38:02,454 - INFO -Running MD Production cycyle7
+2025-08-26 08:38:05,046 - INFO -Running gmxMMPBSA_cycle6
+2025-08-26 08:48:47,062 - INFO -Data Analysis.
+2025-08-26 08:48:47,091 - INFO -Results for cycle6:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -69.1 | -287.5 | -93.6 | 312.0 | 0.0 | -59.9 | -550.5 | -69.4 | -70.1
+STD Values: STD | 10.1 | 33.7 | 5.3 | 26.2 | 0.0 | 0.7 | 127.2 | nan | 10.1
+2025-08-26 08:48:47,091 - INFO -Cleaning files.
+2025-08-26 08:48:47,091 - INFO -Moving files.
+2025-08-26 09:03:57,844 - INFO -MD Production cycyle7 Done
+2025-08-26 09:03:57,851 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 09:03:57,856 - INFO -Running MD Production cycyle8
+2025-08-26 09:04:00,457 - INFO -Running gmxMMPBSA_cycle7
+2025-08-26 09:14:19,118 - INFO -Data Analysis.
+2025-08-26 09:14:19,142 - INFO -Results for cycle7:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -62.2 | -229.5 | -89.5 | 256.8 | 0.0 | -48.6 | -431.7 | -62.2 | -62.5
+STD Values: STD | 8.1 | 22.7 | 5.0 | 19.4 | 0.0 | 0.3 | 87.3 | nan | 8.1
+2025-08-26 09:14:19,142 - INFO -Cleaning files.
+2025-08-26 09:14:19,142 - INFO -Moving files.
+2025-08-26 09:30:45,801 - INFO -MD Production cycyle8 Done
+2025-08-26 09:30:45,808 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 09:30:45,813 - INFO -Running MD Production cycyle9
+2025-08-26 09:30:48,440 - INFO -Running gmxMMPBSA_cycle8
+2025-08-26 09:40:45,754 - INFO -Data Analysis.
+2025-08-26 09:40:45,766 - INFO -Results for cycle8:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -70.1 | -261.7 | -95.9 | 287.5 | 0.0 | -54.9 | -497.8 | -70.4 | -70.6
+STD Values: STD | 8.7 | 22.1 | 5.2 | 18.7 | 0.0 | 0.3 | 85.0 | nan | 8.7
+2025-08-26 09:40:45,766 - INFO -Cleaning files.
+2025-08-26 09:40:45,766 - INFO -Moving files.
+2025-08-26 09:58:13,704 - INFO -MD Production cycyle9 Done
+2025-08-26 09:58:13,713 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 09:58:13,719 - INFO -Running MD Production cycyle10
+2025-08-26 09:58:16,299 - INFO -Running gmxMMPBSA_cycle9
+2025-08-26 10:08:44,202 - INFO -Data Analysis.
+2025-08-26 10:08:44,220 - INFO -Results for cycle9:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -73.4 | -259.4 | -100.5 | 286.5 | 0.0 | -54.6 | -491.8 | -74.7 | -74.4
+STD Values: STD | 11.1 | 33.8 | 6.2 | 27.1 | 0.0 | 0.7 | 128.6 | nan | 11.1
+2025-08-26 10:08:44,236 - INFO -Cleaning files.
+2025-08-26 10:08:44,236 - INFO -Moving files.
+2025-08-26 10:28:51,362 - INFO -MD Production cycyle10 Done
+2025-08-26 10:28:51,369 - INFO -Building input files for gmx MMPBSA.
+2025-08-26 10:28:53,599 - INFO -Running gmxMMPBSA_cycle10
+2025-08-26 10:34:53,874 - INFO -Data Analysis.
+2025-08-26 10:34:53,879 - INFO -Results for cycle10:
+Headers: frame | DeltaG(kcal/mol) | Coul(kcal/mol) | VdW(kcal/mol) | PolSol(kcal/mol) | NpoSol(kcal/mol) | SF1 | SF2 | MedianDeltaG(kcal/mol) | DeltaG_2s(kcal/mol)
+AVG Values: AVG | -64.0 | -226.4 | -89.6 | 252.0 | 0.0 | -47.8 | -427.1 | -63.9 | -64.3
+STD Values: STD | 8.2 | 21.6 | 5.1 | 19.1 | 0.0 | 0.3 | 84.0 | nan | 8.2
+2025-08-26 10:34:53,879 - INFO -Cleaning files.
+2025-08-26 10:34:53,879 - INFO -Moving files.
+2025-08-26 10:34:53,957 - INFO -Making the starting PDB for the next Mutation from LastFrame_cycle10.gro
+2025-08-26 10:34:54,362 - INFO -Making the average of the cycles results.
+2025-08-26 10:34:54,366 - INFO -Results for Mutant4
+DeltaG(kcal/mol): -67.8 +- 6.4 kcal/mol
+Coul(kcal/mol): -257.1 +- 21.7 kcal/mol
+VdW(kcal/mol): -93.9 +- 3.3 kcal/mol
+PolSol(kcal/mol): 283.1 +- 19.5 kcal/mol
+NpoSol(kcal/mol): 0.0 +- 0.0 kcal/mol
+SF1: -54.0 +- 0.2 kcal/mol
+SF2: -488.1 +- 84.4 kcal/mol
+MedianDeltaG(kcal/mol): -66.2 +- nan kcal/mol
+DeltaG_2s(kcal/mol): -66.2 +- 6.4 kcal/mol
+2025-08-26 10:34:54,366 - INFO -Metropolis algorithm
+2025-08-26 10:34:54,366 - INFO -Random Number: 0.38934553421609075  Metropolis Prob: 0.3328710836980767  AVG: -67.8  Stored AVG: -68.9 delta_delta_G:1.1000000000000085
+2025-08-26 10:34:54,366 - INFO -New Configuration Declined
+2025-08-26 10:34:54,366 - INFO -Finished Mutant4
+2025-08-26 10:34:54,366 - INFO -ALL DONE.

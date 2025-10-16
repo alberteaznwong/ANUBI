@@ -1,0 +1,6 @@
+Mutant_Name,Binding Energy,delta_delta_G,Status,Sequence
+Wild Type,-66.6, , , 
+Mutant1,-68.9,-2.3000000000000114,Acc,Mutate_rand_residue-> RES=GLY100:L to GLU
+Mutant2,-65.1,3.8000000000000114,Dec,Mutate_rand_residue-> RES=GLU100:L to LYS
+Mutant3,-67.1,1.8000000000000114,Dec,Mutate_rand_residue-> RES=PHE99:L to ILE
+Mutant4,-67.8,1.1000000000000085,Dec,Mutate_rand_residue-> RES=GLU100:L to ALA

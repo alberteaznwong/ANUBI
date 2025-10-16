@@ -1,0 +1,31 @@
+# input setting
+input_files:
+  structure_file_path: "/home/bio/Desktop/AA_WWD/ProteinMPNN/TIGIT_MG1131_1.pdb"   # make sure receptor firstly and then your protein/peptide
+  pipeline_mode: "protein"                      # Two modes: peptide(with four options:ADD ALA FIRST/END and REMOVE ALA FIRST/END) and protein
+
+
+# IMPORTANT Basic setting
+Basic_setting:
+  conda_activate_script_path: "/home/bio/ls/bin/activate"      # the path for command "conda activate", you can get it by: which activate 
+  GROMACS_executable_path: "/opt/gromacs-2024.4/bin/gmx" # the path to run GROMACS
+  conda_gmx_MMPBSA_name: "gmxMMPBSA"                     # your enviroment name for gmx_MMPBSA
+  conda_Modeller_name: "modeller"                        # your enviroment name for Modeller
+
+
+# gmx_mmpbsa
+gmx_mmpbsa:
+  receptorFRAG: 1     # INT: How many chains in RECEPTOR (FIRST molecule in the starting pdb file)  
+  ABchains: 2         # INT: How many chains  in ANTIBODY (SECOND molecule in the starting pdb file)
+  startingFrameGMXPBSA: "2000"   # STRING set for getting the last 2ns of trajectory to calculate MMPBSA
+  
+# Modeller 
+modeller: 
+  res_pos_list: "105:B 106:B 107:B 108:B 109:B"   #only when you choose protein mode, you need to set that, for peptide mode,you can ignore that cause we will always use the entire peptide sequence for mutation
+  max_mutant: 0          # INT: max mutation number
+  cycle_num: 10          # 10 short MDs
+
+# run 
+run:
+  num_processors: 32        # INT: number of cpu
+
+
