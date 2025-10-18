@@ -39,3 +39,11 @@ This software is designed to **optimize protein or peptide candidates for improv
    ```bash
    python AUNBI_main.py
    
+## License
+
+This software is licensed under the Creative Commons Attribution-NonCommercial 4.0 
+International License (CC BY-NC 4.0). 
+
+- ✅ **Free for academic, research, and personal use**
+- ❌ **Commercial use requires a license**
+- 📧 **For commercial licensing:** Contact [your-email@university.edu]
