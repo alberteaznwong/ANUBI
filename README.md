@@ -46,4 +46,4 @@ International License (CC BY-NC 4.0).
 
 - ✅ **Free for academic, research, and personal use**
 - ❌ **Commercial use requires a license**
-- 📧 **For commercial licensing:** Contact [your-email@university.edu]
+- 📧 **For commercial licensing:** Contact [francesco.zonta@xjtlu.edu.cn]
