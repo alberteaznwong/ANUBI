@@ -41,9 +41,8 @@ This software is designed to **optimize protein or peptide candidates for improv
    
 ## License
 
-This software is licensed under the Creative Commons Attribution-NonCommercial 4.0 
-International License (CC BY-NC 4.0). 
+This software is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0) with the Commons Clause Condition v1.0.
 
-- ✅ **Free for academic, research, and personal use**
-- ❌ **Commercial use requires a license**
-- 📧 **For commercial licensing:** Contact [francesco.zonta@xjtlu.edu.cn]
+- **Free for academic, research, and personal use**
+- **Commercial use requires a license**
+- **For commercial licensing:** Contact francesco.zonta@xjtlu.edu.cn
