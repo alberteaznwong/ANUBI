@@ -1,21 +1,75 @@
-Creative Commons Attribution-NonCommercial 4.0 International License
-
-This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 
-International License. To view a copy of this license, visit:
-http://creativecommons.org/licenses/by-nc/4.0/
-
+License
 Copyright (c) 2025 ZontaLab
 
-You are free to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
+License Grant
+This software is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0) with the Commons Clause Condition v1.0.
 
-Under the following terms:
-- Attribution — You must give appropriate credit, provide a link to the license, 
-  and indicate if changes were made.
-- NonCommercial — You may not use the material for commercial purposes.
+Commons Clause Condition v1.0
 
-No additional restrictions — You may not apply legal terms or technological measures 
-that legally restrict others from doing anything the license permits.
+The Software is provided to you by the Licensor under the License, as defined below, subject to the following condition:
+Without limiting other conditions in the License, the grant of rights under the License will not include, and the License does not grant to you, the right to Sell the Software.
+For purposes of the foregoing, “Sell” means practicing any or all of the rights granted to you under the License to provide to third parties, for a fee or other consideration (including without limitation fees for hosting or consulting/support services related to the Software), a product or service whose value derives, entirely or substantially, from the functionality of the Software.
+Any license notice or attribution required by the License must also include this Commons Clause License Condition notice.
 
-For commercial licensing inquiries, please contact: francesco.zonta@xjtlu.edu.cn
+Software: ANUBI
+License: GNU Affero General Public License v3.Licensor: ZontaLab
+The complete text of the GNU Affero General Public License v3.0 can be found at: https://www.gnu.org/licenses/agpl-3.0.txt
+
+Summary of Terms
+
+You ARE allowed to:
+1. Use the software for personal, academic, and research purposes
+2. Modify and create derivative works
+3. Distribute the software and your modifications
+4. Use the software privately within your organization
+
+You MUST:
+1. Disclose your source code when you distribute or provide access to the software
+2. Include this license and copyright notice with all copies
+3. State significant changes made to the software
+4. License your derivative works under the same license (AGPL-3.0 + Commons Clause)
+5. Make source code available to users who interact with the software over a network
+
+You CANNOT:
+1. Sell the software or any service whose value derives primarily from this software
+2. Use the software in commercial products or services without a separate commercial license
+3. Sublicense or relicense under different terms
+4. Hold the authors liable for any damages
+
+Commercial Licensing
+
+For commercial use, including but not limited to:
+1. Using the software in commercial products or services
+2. Offering hosting, SaaS, or consulting services based on this software
+3. Any use that involves selling or charging for access to the software’s functionality
+Please contact us for a commercial license: francesco.zonta@xjtlu.edu.cn
+
+Third-Party Components Notice
+
+This software relies on several external scientific tools which are distributed under their own licenses.
+These components are not included in this software distribution and remain under their respective licenses.
+Users are responsible for complying with the terms of those licenses when installing or using this software.
+
+1. GROMACS
+License: GNU Lesser General Public License (LGPL), version 2.1
+Website: https://www.gromacs.org/
+Copyright: GROMACS Development Team
+Usage: Molecular Dynamics (MD) engine backend
+2. gmx_MMPBSA
+License: GNU General Public License v3.0
+Website: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
+Copyright: Valdés-Tresanco et al.
+Usage: Binding free energy and post-processing analysis
+3. Modeller
+License: Modeller Academic License (proprietary, free for academic use)
+Website: https://salilab.org/modeller/
+Copyright: Salilab
+Usage: Protein modeling and mutation generation
+Note: Modeller is not open-source and must be installed separately under its own academic-use terms.
+
+These components are only invoked externally (via command-line or API) and are not distributed as part of this software package.
+
+Disclaimer
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
