@@ -12,10 +12,15 @@ import numpy as np
 import math
 import random
 import yaml
+import argparse
+import sys
 from Bio.PDB import PDBParser
 from FUNCTION import make_top_protein, fill_water_ions, energy_min, make_nvt, run_md
 from FUNCTION import files_gmxmmpbsa, gmx_mmpbsa, Data_Analysis_Pre, Data_Analysis_Cal, clean_for_each_cycle
 from FUNCTION import Data_Analysis_Cal_child, peptide_mode, extract_lastframe_and_rename
+
+
+
 
 ############################################### FUNCTION DEFINATION #####################################
 def load_config(config_file):
@@ -319,6 +324,16 @@ def get_peptide_residue_info(pdb_file):
 
 ############################################# LOAD FILES ###########################################
 
+# Command-line argument parsing
+parser = argparse.ArgumentParser(description='ANUBI Pipeline')
+parser.add_argument('-i', '--infile', type=str, required=True,
+                   help='Input YAML configuration file')
+
+args = parser.parse_args()
+
+# Load configuration from the provided YAML file
+config_file = args.infile
+config = load_config(config_file )
 
 #PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.getcwd()
@@ -331,7 +346,7 @@ MMPBSA_INFILE_PATH = os.path.join(PROJECT_ROOT, "gmx_mmpbsa_in")
 # pdb file
 #protein_infile = "HLA_BiAB_protein_50ns" 
 #protein_infile = "mtbind"
-#protein_infile = "antibody_zixuan"
+
 
 #protein_file_path = os.path.join(DATA_DIR, f"{protein_infile}.pdb")
 
@@ -369,8 +384,8 @@ logging.basicConfig(
 logging.info(f"ROOT FOLDER PATH: {ROOT_OUTPUT}")
 
 ####################################### CHECK SYSTEM #############################################
-config_file = os.path.join(PROJECT_ROOT, 'infile.yaml')
-config = load_config(config_file )
+#config_file = os.path.join(PROJECT_ROOT, 'infile.yaml')
+#config = load_config(config_file )
 conda_actiavte_path = config['Basic_setting']['conda_activate_script_path']
 #VMD_path = config['Basic_setting']['VMD_path']
 gmx_path = config['Basic_setting']['GROMACS_executable_path']
@@ -435,6 +450,9 @@ ABchains = str(config['gmx_mmpbsa']['ABchains'])
 startingFrameGMXPBSA = config['gmx_mmpbsa']['startingFrameGMXPBSA']
 pipeline_mode = config['input_files']['pipeline_mode']
 
+min_peptide = config['run']['peptide_mode_length_min']
+max_peptide = config['run']['peptide_mode_length_max']
+frequency_peptide = config['run']['peptide_mode_frequency_control']
 #protein_infile = config['input_files']['structure_infile_name']
 protein_file_path = config['input_files']['structure_file_path']
 if not os.path.exists(protein_file_path):
@@ -454,7 +472,8 @@ MUTANT_signal = False
 #Stored BE standard deviation from the last configuration. - Default: no
 #Stored_STD= 4.3
 #Metropolis Temperature - Default: 2  1.5
-Metropolis_temp = 1
+#Metropolis_temp = 1
+Metropolis_temp = config['run']['Metropolis_Temperature']
 #Metropolis Temperature top limit - Default: 4
 Metropolis_Temp_cap= 4
 
@@ -508,7 +527,7 @@ for sequence in range (0,max_mutant+1):
             attempts += 1
             pdb_file = os.path.join(ROOT_OUTPUT,f"{protein_infile}.pdb") #LastFRame_xxxx.pdb
 
-            if pipeline_mode == 'peptide' and attempts % 6 == 0 and 8 <= peptide_length <= 20:
+            if pipeline_mode == 'peptide' and attempts % (frequency_peptide+1) == 0 and min_peptide <= peptide_length <= max_peptide:
 
                 peptide_options = ["ADD_FIRST", "ADD_END", "REMOVE_LAST", "REMOVE_FIRST"]
                 p_choice = random.choice(peptide_options)

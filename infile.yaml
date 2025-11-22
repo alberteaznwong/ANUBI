@@ -1,7 +1,7 @@
 # input setting
 input_files:
-  structure_file_path: "/home/bio/Desktop/AA_WWD/ProteinMPNN/TIGIT_MG1131_1.pdb"   # make sure receptor firstly and then your protein/peptide
-  pipeline_mode: "protein"                      # Two modes: peptide(with four options:ADD ALA FIRST/END and REMOVE ALA FIRST/END) and protein
+  structure_file_path: "/home/bio/Downloads/TIGITandPeptide.pdb"   # equilibrated complex structure, make sure receptor firstly and then protein/peptide you want to design
+  pipeline_mode: "peptide"                      # Two modes: peptide(with four options:ADD ALA FIRST/END and REMOVE the FIRST/END) and protein
 
 
 # IMPORTANT Basic setting
@@ -15,17 +15,20 @@ Basic_setting:
 # gmx_mmpbsa
 gmx_mmpbsa:
   receptorFRAG: 1     # INT: How many chains in RECEPTOR (FIRST molecule in the starting pdb file)  
-  ABchains: 2         # INT: How many chains  in ANTIBODY (SECOND molecule in the starting pdb file)
-  startingFrameGMXPBSA: "2000"   # STRING set for getting the last 2ns of trajectory to calculate MMPBSA
+  ABchains: 1         # INT: How many chains  in PROTEIN/PEPTIDE (SECOND molecule in the starting pdb file), PEPTIDE please set it to 1
+  startingFrameGMXPBSA: "2000"   # STRING set for getting the last 3ns (5ns - 2ns) of trajectory to calculate MMPBSA
   
 # Modeller 
 modeller: 
   res_pos_list: "105:B 106:B 107:B 108:B 109:B"   #only when you choose protein mode, you need to set that, for peptide mode,you can ignore that cause we will always use the entire peptide sequence for mutation
-  max_mutant: 0          # INT: max mutation number
-  cycle_num: 10          # 10 short MDs
+  max_mutant: 25          # INT: max mutation number
+  cycle_num: 10          # 10 short MDs, we usually run 10 short MDs, and get the average binding energy results
 
 # run 
 run:
   num_processors: 32        # INT: number of cpu
-
+  Metropolis_Temperature: 1    # the value is actually 1/bata, a smaller bata (a larger Metropolis_Temperature) makes the acceptance probability of unfavorable candidates higher.
+  peptide_mode_length_min: 8  # set the min length for the peptdie, only set when you use peptide mode, otherwise you can ignore that
+  peptide_mode_length_max: 20  # set the max length for the peptdie, only set when you use peptide mode, otherwise you can ignore that
+  peptide_mode_frequency_control: 5  # for peptide mode: every 5 point-mutation, choose one uniformly from {delN,delC,addAlaN,addAlaC}
 

@@ -29,8 +29,8 @@ nstxout			= 0	 	        ; suppress bulky .trr file by specifying
 nstvout			= 0			; No output, except for last frame (velocities)
 nstfout			= 0			; No output, except for last frame (forces)
 nstlog			= 5000			; (10ps) Write every step to the log
-nstenergy		= 10000		; Write energies at every step
-nstxout-compressed	= 10000		; Write a compressed trajectory
+nstenergy		= 10000		; Write energies at every step 10000
+nstxout-compressed	= 10000		; Write a compressed trajectory 10000
 ;compressed-x-grps       = System    		; save the whole system
 
 

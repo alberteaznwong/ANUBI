@@ -8,8 +8,7 @@
 #SBATCH --error=%j.err
 
 # load modules
-module purge                      
-module load vmd/1.9.3-gcc-8.5.0-2ikhjpf               
+module purge                                    
 module load anaconda3
 module load gromacs/2023.2-gcc-9.5.0-jzxesel            
 
