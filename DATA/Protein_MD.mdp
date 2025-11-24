@@ -107,7 +107,7 @@ refcoord-scaling        = all				; (all before) the reference coordinates are sc
 ;----------------------------------------------------
 ; VELOCITY GENERATION
 ;----------------------------------------------------
-gen-vel      		= no      			; Velocity generation is off because we restarted from NPT
+gen-vel      		= no      			; 
 ; comm-mode           = None  ;
 
 

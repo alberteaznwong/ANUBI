@@ -27,7 +27,7 @@ modeller:
 # run 
 run:
   num_processors: 32        # INT: number of cpu
-  Metropolis_Temperature: 1    # the value is actually 1/bata, a smaller bata (a larger Metropolis_Temperature) makes the acceptance probability of unfavorable candidates higher.
+  Metropolis_Temperature: 2    # the value is actually 1/bata, a smaller bata (a larger Metropolis_Temperature) makes the acceptance probability of unfavorable candidates higher.
   peptide_mode_length_min: 8  # set the min length for the peptdie, only set when you use peptide mode, otherwise you can ignore that
   peptide_mode_length_max: 20  # set the max length for the peptdie, only set when you use peptide mode, otherwise you can ignore that
   peptide_mode_frequency_control: 5  # for peptide mode: every 5 point-mutation, choose one uniformly from {delN,delC,addAlaN,addAlaC}

@@ -16,5 +16,5 @@ module load gromacs/2023.2-gcc-9.5.0-jzxesel
 source activate ANUBI
 
 # run
-python ANUBI_main.py
+python ANUBI_main.py -i infile.yaml
 
