@@ -1,31 +1,30 @@
 ;====================================================
 ; 27 December 2023
-; NVT equilibration
+; NPT equilibration
 ; similar to 'md-intro-tutorial-main' for amber
 ;====================================================
 
-; there should be a position restrain
-define          	= -DPOSRES
 
 ;----------------------------------------------------
 ; RUN CONTROL
 ;----------------------------------------------------
-integrator              = md        ; leap-frog integrator
-dt                      = 0.002     ; 2 fs
-nsteps                  = 500000     ; 2 * 500000 = 1000 ps 1ns
-comm-mode               = none
-nstcomm      		    = 100           ; frequency for center of mass motion removal
+
+integrator   		= md            ; sd->stochastic leap-frog integrator
+nsteps       		= 50000	; 2 * 50,000 fs = 100 ps
+dt           		= 0.002		    ; 2 fs
+comm-mode           = linear
+nstcomm      		= 100           ; frequency for center of mass motion removal
 
 ;----------------------------------------------------
 ; OUTPUT CONTROL
 ;----------------------------------------------------
-nstxout    		        = 0		        ; scrive ogni [50ps]steps (coordinates)
-nstvout  		        = 0 		    ; No output, except for last frame (velocities)
-nstfout  		        = 0        		    ; No output, except for last frame (forces)
-nstlog   		        = 10000		; Write every step to the log 5000
-nstenergy 		        = 10000   	; Write energies at every step 5000
-nstxout-compressed	        = 10000		; Write a compressed trajectory 5000
-;compressed-x-grps      = System    		; save the whole system
+nstxout 		    = 0         		; scrive ogni [50ps]steps (coordinates)
+nstvout  		    = 0         		; No output, except for last frame (velocities)
+nstfout 		    = 0    			    ; No output, except for last frame (forces)
+nstlog   		    = 5000 		; Write every step to the log 
+nstenergy		    = 5000 		; Write energies at every step 
+nstxout-compressed	    = 5000		; Write a compressed trajectory 
+;compressed-x-grps	= System    		; save the whole system
 
 ;----------------------------------------------------
 ; CONSTRAINTS (BONDS)
@@ -36,15 +35,15 @@ lincs-iter		        = 1         		; accuracy of LINCS
 lincs-order		        = 4         		; also related to accuracy
 
 ;----------------------------------------------------
-; do not constrain the starting configuration 
+; do not constrain the starting configuration
 ;----------------------------------------------------
-continuation		    = no
+continuation		    = yes
 
 ;----------------------------------------------------
 ; NEIGHBORSEARCHING PARAMETERS
 ;----------------------------------------------------
 cutoff-scheme 		= Verlet
-nstlist			    = 20			; Frequency to update the neighbor list and long range forces
+nstlist			    = 10			; Frequency to update the neighbor list and long range forces
 ns-type			    = grid			; Method to determine neighbor list (simple, grid)
 rlist			    = 1.0			; Cut-off for making neighbor list (short range forces)
 pbc 			    = xyz
@@ -78,22 +77,22 @@ DispCorr		 = EnerPres
 ; TEMPERATURE & PRESSURE COUPL
 ;----------------------------------------------------
 tcoupl                  = V-rescale             ; modified Berendsen thermostat
-tc_grps          	    = Protein Non-Protein
-tau_t            	    = 1.0     1.0
-ref_t            	    = 300     300
+tc-grps                 = Protein Non-Protein   ; coupling groups 
+tau_t                   = 1.0  1.0              ; time constant, in ps
+ref_t                   = 310  310              ; reference temperature, one for each group, in K
 
-
-; Pressure coupling is off
-pcoupl                  = no
+pcoupl                  = Berendsen          ; Pressure coupling on in NPT
+pcoupltype              = isotropic             ; uniform scaling of box vectors
+tau_p                   = 2.0                   ; time constant, in ps (0.5 before)
+ref_p                   = 1.0                   ; reference pressure, in bar
+compressibility         = 4.5e-5                ; isothermal compressibility of water, bar^-1
+refcoord_scaling        = all
 
 
 ;----------------------------------------------------
 ; VELOCITY GENERATION
 ;----------------------------------------------------
-gen_vel      		= yes      ; Velocity generation is on (if gen_vel is 'yes', continuation should be 'no')
-gen_seed     		= -1       ; Use random seed
-gen_temp     		= 300
-
+gen_vel      		= no      			; Velocity generation is off because we restarted from NVT
 
 ;----------------------------------------------------
 ; Pull code
@@ -103,16 +102,4 @@ pull			= no
 ;----------------------------------------------------
 ; FREE ENERGY CALCULATIONS
 ;----------------------------------------------------
-free-energy		= no
-
-
-
-
-
-
-
-
-
-
-
-
+free-energy             = no

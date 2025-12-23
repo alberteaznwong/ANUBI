@@ -11,7 +11,7 @@ This software is designed to **optimize protein or peptide candidates for improv
 **4. Sequence Sampling using Monte Carlo methods: We have two different modes PEPTIDE MODE and PROTEIN MODE**  
 
 
-![ANUBI Workflow](image/workflow.png)
+![ANUBI Workflow](image/workflow.jpg)
 ---
 
 ## **Installation**

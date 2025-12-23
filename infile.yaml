@@ -1,6 +1,6 @@
 # input setting
 input_files:
-  structure_file_path: "/home/bio/Downloads/TIGITandPeptide.pdb"   # equilibrated complex structure, make sure receptor firstly and then protein/peptide you want to design
+  structure_file_path: "/home/bio/Desktop/AA_WWD/eyad/lag3_15_P6.pdb"   # equilibrated complex structure, make sure receptor firstly and then protein/peptide you want to design
   pipeline_mode: "peptide"                      # Two modes: peptide(with four options:ADD ALA FIRST/END and REMOVE the FIRST/END) and protein
 
 
@@ -20,14 +20,14 @@ gmx_mmpbsa:
   
 # Modeller 
 modeller: 
-  res_pos_list: "105:B 106:B 107:B 108:B 109:B"   #only when you choose protein mode, you need to set that, for peptide mode,you can ignore that cause we will always use the entire peptide sequence for mutation
-  max_mutant: 25          # INT: max mutation number
+  res_pos_list: "99:B 100:B 101:B 102:B 103:B 104:B 105:B 106:B 107:B 108:B 109:B 110:B"   #only when you choose protein mode, you need to set that, for peptide mode,you can ignore that cause we will always use the entire peptide sequence for mutation
+  max_mutant: 20          # INT: max mutation number
   cycle_num: 10          # 10 short MDs, we usually run 10 short MDs, and get the average binding energy results
 
 # run 
 run:
   num_processors: 32        # INT: number of cpu
-  Metropolis_Temperature: 2    # the value is actually 1/bata, a smaller bata (a larger Metropolis_Temperature) makes the acceptance probability of unfavorable candidates higher.
+  Metropolis_Temperature: 1    # the value is actually 1/bata, a smaller bata (a larger Metropolis_Temperature) makes the acceptance probability of unfavorable candidates higher.
   peptide_mode_length_min: 8  # set the min length for the peptdie, only set when you use peptide mode, otherwise you can ignore that
   peptide_mode_length_max: 20  # set the max length for the peptdie, only set when you use peptide mode, otherwise you can ignore that
   peptide_mode_frequency_control: 5  # for peptide mode: every 5 point-mutation, choose one uniformly from {delN,delC,addAlaN,addAlaC}

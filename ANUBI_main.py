@@ -355,7 +355,7 @@ make_mutation_modeller_py = os.path.join(FUNCTION_DIR,"MakeNewMutant_Modeller.py
 ions_mdp_file = "ions"
 minim_mdp_file = "minim"
 nvt_mdp_file = "NVT"
-#npt_mdp_file = "NPT"
+npt_mdp_file = "NPT"
 #samd_mdp_file = "SAMD"
 md_mdp_file = "MD_MMPBSA"
 only_protein_md_mdp_file = "Protein_MD"
@@ -363,7 +363,7 @@ only_protein_md_mdp_file = "Protein_MD"
 ions_mdp_path = os.path.join(DATA_DIR, f"{ions_mdp_file}.mdp")
 minim_mdp_path = os.path.join(DATA_DIR, f"{minim_mdp_file}.mdp")
 nvt_mdp_path = os.path.join(DATA_DIR, f"{nvt_mdp_file}.mdp")
-#npt_mdp_path = os.path.join(DATA_DIR, f"{npt_mdp_file}.mdp")
+npt_mdp_path = os.path.join(DATA_DIR, f"{npt_mdp_file}.mdp")
 #samd_mdp_path = os.path.join(DATA_DIR, f"{samd_mdp_file}.mdp")
 md_mdp_path = os.path.join(DATA_DIR, f"{md_mdp_file}.mdp")
 only_protein_md_mdp_path = os.path.join(DATA_DIR, f"{only_protein_md_mdp_file}.mdp")
@@ -609,11 +609,8 @@ for sequence in range (0,max_mutant+1):
     # Energy Minimiization
     energy_min(minim_mdp_path, "system_ions", "topol", "system_compl",gmx_path)
 
-
-    # only Nvt, make sure your structure already get Equilibration completed
-    
-    #make_nvt("system_compl_minim.gro", nvt_mdp_path, npt_mdp_path, "system_equil", 0, gmx_path)
-    make_nvt("system_compl_minim.gro", nvt_mdp_path, "system_equil", sequence, gmx_path)
+    make_nvt("system_compl_minim.gro", nvt_mdp_path, npt_mdp_path, "system_equil", 0, gmx_path)
+    #make_nvt("system_compl_minim.gro", nvt_mdp_path, "system_equil", sequence, gmx_path)
     # Move .cpt, .top, and .itp files to repository folder
     for file_pattern in [f"{current_dir}/*.cpt", f"{current_dir}/*.top", f"{current_dir}/*.itp"]:
         for file in glob.glob(file_pattern):
