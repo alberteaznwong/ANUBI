@@ -15,7 +15,7 @@ import yaml
 import argparse
 import sys
 from Bio.PDB import PDBParser
-from FUNCTION import make_top_protein, fill_water_ions, energy_min, make_nvt, run_md
+from FUNCTION import make_top_protein, fill_water_ions, energy_min, make_equi, run_md
 from FUNCTION import files_gmxmmpbsa, gmx_mmpbsa, Data_Analysis_Pre, Data_Analysis_Cal, clean_for_each_cycle
 from FUNCTION import Data_Analysis_Cal_child, peptide_mode, extract_lastframe_and_rename
 
@@ -179,7 +179,6 @@ def replace_his_residues_flexible(input_pdb, output_pdb):
 
 
 def MD_for_each_cycle(work_dir, cycle_number,sequence, md_mdp_path, tpr_file, trj_name, gmx_path):
-    print("start MD in MD function")
     #cycle_number = 1
     #while cycle_number <= cycle_num:
         
@@ -235,14 +234,14 @@ def gmx_mmpbsa_for_each_cycle(work_dir, cycle_number,only_protein_md_mdp_path,te
         print(f"Error: File trj_check.out not found.")
         number_of_frames = None
     #conda_activate_path="/home/bio/ls/bin"
-    # no the frame in 2 ns, if have it, it should be 151 frames
+ 
     number_of_frames = int(number_of_frames)
-    #number_of_frames -= 1
+ 
     #conda_gmxmmpbsa_name="gmxMMPBSA"
     forcefield="amber99sb-ildn"
-    #FORCE_FIELD_PATH = "/home/bio/Desktop/jupyter_test/antibody_test/FORCE_FIELD"
+    
     mmpbsa_inFILE="mmpbsa_LinearPB_amber99SB_ILDN.in"
-    #MMPBSA_INFILE_PATH = "/home/bio/Desktop/jupyter_test/antibody_test/gmx_mmpbsa_in"
+    
     np_value = config['run']['num_processors']
     #gmx_mmpbsa(1, conda_activate_path, conda_gmxmmpbsa_name, cycle_number_MD_FOLDER, ConfName, RootName, forcefield, FORCE_FIELD_PATH, 
     #             mmpbsa_inFILE, MMPBSA_INFILE_PATH , np_value, number_of_frames)
@@ -609,7 +608,7 @@ for sequence in range (0,max_mutant+1):
     # Energy Minimiization
     energy_min(minim_mdp_path, "system_ions", "topol", "system_compl",gmx_path)
 
-    make_nvt("system_compl_minim.gro", nvt_mdp_path, npt_mdp_path, "system_equil", 0, gmx_path)
+    make_equi("system_compl_minim.gro", nvt_mdp_path, npt_mdp_path, "system_equil", sequence, gmx_path)
     #make_nvt("system_compl_minim.gro", nvt_mdp_path, "system_equil", sequence, gmx_path)
     # Move .cpt, .top, and .itp files to repository folder
     for file_pattern in [f"{current_dir}/*.cpt", f"{current_dir}/*.top", f"{current_dir}/*.itp"]:

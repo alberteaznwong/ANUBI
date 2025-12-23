@@ -23,7 +23,7 @@ def run_gromacs_command(command, error_message, pipe_file, output_file=None):
         raise SystemExit(error_message)
 
 #     make_nvt("system_compl_minim.gro", nvt_mdp_path, npt_mdp_path, "system_equil", 0, gmx_path)
-def make_nvt(input_structure_file, nvt_mdp, npt_mdp, output_gro, sequence, gmx_path,top_name="topol", pipe_file="out.out"):
+def make_equi(input_structure_file, nvt_mdp, npt_mdp, output_gro, sequence, gmx_path,top_name="topol", pipe_file="out.out"):
     """
     Performs NVT and NPT equilibration using GROMACS commands, and logs outputs to files.
 
