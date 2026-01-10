@@ -2,10 +2,17 @@
 Version: 1.0.0  
 
 ---
+## **Article**
+If you use ANUBI in your pipeline, please cite the following article: 
+ANUBI: A Platform for Affinity Optimization of Proteins and Peptides in Drug Design
+Damiano Buratto, Wanding Wang, Xinyi Zhang, Qiujie Zhu, Jia Meng, Daniel J. Rigden, Ruhong Zhou, and Francesco Zonta
+Journal of Chemical Theory and Computation Article ASAP
+DOI: 10.1021/acs.jctc.5c01640
+
 ## **Overview**
 This software is designed to **optimize protein or peptide candidates for improved target binding**. 
 ### **The whole process includes**  
-**1. The initial MD：Make topolofy, Buid box, Add water and ions, Energy minimization, NVT and NTP;**   
+**1. The initial MD：Make topology, Build box, Add water and ions, Energy minimization, NVT and NTP;**   
 **2. The production MD;**  
 **3. Binding free energy calculation: gmx_MMPBSA;**  
 **4. Sequence Sampling using Monte Carlo methods: We have two different modes PEPTIDE MODE and PROTEIN MODE**  
