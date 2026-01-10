@@ -4,7 +4,7 @@ Version: 1.0.0
 ---
 ## **Article**
 If you use ANUBI in your pipeline, please cite the following article: 
-ANUBI: A Platform for Affinity Optimization of Proteins and Peptides in Drug Design
+ANUBI: A Platform for Affinity Optimization of Proteins and Peptides in Drug Design 
 Damiano Buratto, Wanding Wang, Xinyi Zhang, Qiujie Zhu, Jia Meng, Daniel J. Rigden, Ruhong Zhou, and Francesco Zonta
 Journal of Chemical Theory and Computation Article ASAP
 DOI: 10.1021/acs.jctc.5c01640
