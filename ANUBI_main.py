@@ -178,7 +178,7 @@ def replace_his_residues_flexible(input_pdb, output_pdb):
             outfile.write(line.rstrip('\n') + '\n')
 
 
-def MD_for_each_cycle(work_dir, cycle_number,sequence, md_mdp_path, tpr_file, trj_name, gmx_path):
+def MD_for_each_cycle(work_dir, cycle_number, sequence, md_mdp_path, tpr_file, trj_name, gmx_path, ntmpi=1, ntomp=None, gpu_flags=None):
     #cycle_number = 1
     #while cycle_number <= cycle_num:
         
@@ -199,7 +199,12 @@ def MD_for_each_cycle(work_dir, cycle_number,sequence, md_mdp_path, tpr_file, tr
     #make_new_minim_config_samd("system_equil.gro", samd_mdp_path, "system_Compl_MDstart", 0)
     #make_new_minim_config_samd(input_structure_file, samd_mdp_path, output_gro, sequence)
     #run_md(md_mdp_path,"system_Compl_MD", "traj_MD", 0, 1)
-    run_md(md_mdp_path, tpr_file, trj_name, sequence, cycle_number, gmx_path)
+    # Call run_md with keywords if supported; fall back to positional call for older signatures
+    try:
+        run_md(md_mdp_path, tpr_file, trj_name, sequence, cycle_number, gmx_path, ntmpi=ntmpi, ntomp=ntomp, gpu_flags=gpu_flags)
+    except TypeError:
+        # Older run_md may not accept those keywords; call with minimal args
+        run_md(md_mdp_path, tpr_file, trj_name, sequence, cycle_number, gmx_path)
     shutil.copy("system_Compl_MD.gro", f"LastFrame_cycle{cycle_number}.gro")
     #cycle_number += 1
 
@@ -629,7 +634,14 @@ for sequence in range (0,max_mutant+1):
     for file in glob.glob("./#*"):
         os.remove(file)
 
-    md_args = (sequence, md_mdp_path, "system_Compl_MD", "traj_MD", f"{gmx_path}")
+    # GROMACS threading / GPU settings (optional in infile.yaml under key 'gromacs')
+    gmx_cfg = config.get('gromacs', {}) if isinstance(config, dict) else {}
+    num_procs = config.get('run', {}).get('num_processors', 1)
+    ntmpi = gmx_cfg.get('ntmpi', 1)
+    ntomp = gmx_cfg.get('ntomp', num_procs)
+    gpu_flags = gmx_cfg.get('gpu_flags', None)
+
+    md_args = (sequence, md_mdp_path, "system_Compl_MD", "traj_MD", f"{gmx_path}", ntmpi, ntomp, gpu_flags)
     gmx_args = (only_protein_md_mdp_path,folders["TEMP_FILES_FOLDER"], FORCE_FIELD_PATH, MMPBSA_INFILE_PATH, folders["REMOVED_FILES_FOLDER"], folders["results"], folders["repository"], current_path_store)
     # 1st cycle MD
     MD_for_each_cycle(folders["cycle1_MD"],1, *md_args)

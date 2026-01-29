@@ -77,10 +77,11 @@ DispCorr		 = EnerPres
 ;----------------------------------------------------
 ; TEMPERATURE & PRESSURE COUPL
 ;----------------------------------------------------
+; GPU-friendly: use a single temperature coupling group when possible
 tcoupl                  = V-rescale             ; modified Berendsen thermostat
-tc_grps          	    = Protein Non-Protein
-tau_t            	    = 1.0     1.0
-ref_t            	    = 300     300
+tc-grps                 = System                ; single group for GPU compatibility
+tau_t                   = 1.0
+ref_t                   = 300
 
 
 ; Pressure coupling is off

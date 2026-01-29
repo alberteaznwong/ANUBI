@@ -12,6 +12,15 @@ Basic_setting:
   conda_Modeller_name: "modeller"                        # your enviroment name for Modeller
 
 
+# Optional GROMACS runtime tuning (ntmpi, ntomp, gpu_flags)
+# ntmpi * ntomp should be approximately the number of CPUs allocated to the job.
+# gpu_flags: a string appended to `gmx mdrun` for GPU offload (example shown)
+gromacs:
+  ntmpi: 1
+  ntomp: 32
+  gpu_flags: "-nb gpu -pme gpu -bonded gpu -update gpu"
+
+
 # gmx_mmpbsa
 gmx_mmpbsa:
   receptorFRAG: 1     # INT: How many chains in RECEPTOR (FIRST molecule in the starting pdb file)  

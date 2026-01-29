@@ -83,12 +83,15 @@ rvdw-switch             = 1.0
 DispCorr		        = EnerPres
 
 ;----------------------------------------------------
-; TEMPERATURE COUPLING  
+; TEMPERATURE COUPLING  (GPU-friendly defaults)
 ;----------------------------------------------------
-tcoupl                   = V-rescale			; Temperature coupling using velocity rescaling with a stochastic term 
-tc-grps                  = Protein Non-Protein		; groups to couple separately to temperature bath
-tau-t                    = 1.0 1.0			; [ps] time constant for coupling (one for each group in tc-grps)
-ref-t                    = 310 310			; [k] reference temperature for coupling (one for each group in tc-grps)
+; Use a single coupling group for best GPU update compatibility.
+; If you require separate coupling of protein and solvent, GPU update
+; may not be used for the "update" step for some thermostats.
+tcoupl                   = V-rescale            ; Temperature coupling using velocity rescaling with a stochastic term
+tc-grps                  = System               ; single group to maximize GPU compatibility
+tau-t                    = 1.0                  ; [ps] time constant for coupling
+ref-t                    = 310                  ; [k] reference temperature for coupling
 
 ;----------------------------------------------------
 ; PRESSURE COUPLING    
