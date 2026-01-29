@@ -37,15 +37,12 @@ This software is designed to **optimize protein or peptide candidates for improv
    cd ANUBI
 2. Make sure you have all dependencies: check conda, python, gromacs, gmx_mmpbsa and modeller;
    ```bash
-   conda create -n ANUBI
-   conda activate ANUBI
-   conda config --add channels salilab   
-   conda install modeller     
-   conda install pandas numpy pyyaml biopython 
+   conda env create -f gmx_MMPBSA_env.yml        **Installing gromacs-2024.3-cuda, gmx_MMPBSA, vmd, pdbfixer and modeller**
+   conda activate gromacs
 3. Open the input file **input.yaml**, change parameters: **input setting, IMPORTANT Basic setting, gmx_mmpbsa, Modeller and run**. You need to set the input file path, different mode (peptide or protein), conda activation path, etc., as well as the number of chains, mutation locations, etc., based on your own requirements, you can check the **ANUBI_USER_GUIDE.pdf** for detailed information (**PLease make sure your paths for running GROMACS and gmx_MMPBSA are correct**).   
 4. When you make sure that all dependencies and setting are ok, run main script:
    ```bash
-   python AUNBI_main.py -i infile.yaml
+   python ANUBI_main.py -i infile.yaml
    
 ## License
 
